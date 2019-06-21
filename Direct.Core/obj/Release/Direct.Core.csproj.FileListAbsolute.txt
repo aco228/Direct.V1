@@ -1,0 +1,11 @@
+D:\Projects\AkoProjects\dot.net\Direct\Direct.Core\bin\Release\Direct.Core.dll.config
+D:\Projects\AkoProjects\dot.net\Direct\Direct.Core\bin\Release\Direct.Core.dll
+D:\Projects\AkoProjects\dot.net\Direct\Direct.Core\bin\Release\Direct.Core.pdb
+D:\Projects\AkoProjects\dot.net\Direct\Direct.Core\bin\Release\log4net.dll
+D:\Projects\AkoProjects\dot.net\Direct\Direct.Core\bin\Release\MySql.Data.dll
+D:\Projects\AkoProjects\dot.net\Direct\Direct.Core\bin\Release\log4net.xml
+D:\Projects\AkoProjects\dot.net\Direct\Direct.Core\obj\Release\Direct.Core.dll
+D:\Projects\AkoProjects\dot.net\Direct\Direct.Core\obj\Release\Direct.Core.pdb
+D:\Projects\AkoProjects\dot.net\Direct\Direct.Core\bin\Release\x86\sqlite3.dll
+D:\Projects\AkoProjects\dot.net\Direct\Direct.Core\bin\Release\x64\sqlite3.dll
+D:\Projects\AkoProjects\dot.net\Direct\Direct.Core\obj\Release\Direct.Core.csprojResolveAssemblyReference.cache
