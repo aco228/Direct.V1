@@ -31,7 +31,9 @@ namespace Direct.Core.DatabaseTypes
     protected SqlCommand _command = null;
     protected SqlDataReader _reader = null;
     protected SqlTransaction _transaction = null;
-    
+
+    public override string CurrentDateQueryString => "getdate()";
+
     public DirectDatabaseMsSql(string databaseName, string schemaName)
       : base(databaseName, schemaName)
     {

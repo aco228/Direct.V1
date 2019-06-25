@@ -3,3 +3,6 @@
 ################################################################################
 
 *.lock
+/.vs/Direct/v15/Server/sqlite3/storage.ide
+/.vs/Direct/v15/Server/sqlite3/storage.ide-shm
+/.vs/Direct/v15/Server/sqlite3/storage.ide-wal

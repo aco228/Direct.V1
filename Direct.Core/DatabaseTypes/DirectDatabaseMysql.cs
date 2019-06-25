@@ -16,6 +16,8 @@ namespace Direct.Core.DatabaseTypes
     private MySqlDataReader _reader = null;
     private MySqlTransaction _transaction = null;
 
+    public override string CurrentDateQueryString => "CURRENT_TIMESTAMP";
+
     public DirectDatabaseMysql(string databaseName)
       : base(databaseName, string.Empty)
     {

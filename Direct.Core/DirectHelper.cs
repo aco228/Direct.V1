@@ -9,7 +9,7 @@ namespace Direct.Core
 {
 	public static class DirectHelper
 	{
-
+    
 		public static string GetDateTime(DateTime date)
 		{
 			return date.ToString("yyyy-MM-dd HH:mm:ss:fff");

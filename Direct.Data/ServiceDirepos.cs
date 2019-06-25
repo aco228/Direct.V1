@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Direct.Data
 {  
+  // test
   public class ServiceDireposBase : DirectRepositoryBase<ServiceDireposBase>
   {
     public ServiceDireposBase(DirectContainer dc) : base("Service", "core", MobilePaywallDirect.Instance, dc) { }

@@ -1,4 +1,5 @@
-﻿using Direct.Data;
+﻿using Direct.Core;
+using Direct.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,16 +12,13 @@ namespace Direct.Test
   {
     static void Main(string[] args)
     {
-      int a = 1, b = 1;
-      a = b = (a + b);
-      Console.WriteLine($"{a} {b}");
-      Console.ReadKey();
+      Test();
     }
 
     public static async void Test()
     {
       MobilePaywallDirect db = MobilePaywallDirect.Instance;
-      int? id = await db.LoadIntAsync("SELECT TOP 1 ServiceID FROM MobilePaywall.core.Service");
+      int? id = db.LoadInt("SELECT TOP 1 ServiceID FROM MobilePaywall.core.Service", DirectTime.Now);
       Console.ReadKey();
     }
   }
