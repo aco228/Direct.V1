@@ -14,6 +14,7 @@ namespace Direct.Core
 		protected string _databaseName = string.Empty;
 		protected string _databaseScheme = string.Empty;
 		protected int _timeout = -1;
+    protected DirectTransactionalManager _transactionalManager = null;
 
 		protected bool _error = false;
 		protected bool _connected = false;
@@ -26,12 +27,14 @@ namespace Direct.Core
 		public string DatabaseScheme { get { return this._databaseScheme; } }
     public virtual string CurrentDateQueryString { get { return string.Empty; } }
 		public Action<string> OnFatalAction { get { return this._onFatalAction; } set { this._onFatalAction = value; } }
+    public DirectTransactionalManager Transactional { get { return this._transactionalManager; } }
 
 		public DirectDatabaseBase(string databaseName, string databaseScheme)
 		{
 			this._databaseName = databaseName;
 			this._databaseScheme = databaseScheme;
-		}
+      this._transactionalManager = new DirectTransactionalManager(this);
+    }
     
 		protected abstract bool Connect();
     protected abstract bool Disconnect();

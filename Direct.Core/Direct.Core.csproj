@@ -80,6 +80,7 @@
     <Compile Include="DirectDatabaseBase.cs" />
     <Compile Include="DirectHelper.cs" />
     <Compile Include="DirectTime.cs" />
+    <Compile Include="DirectTransactionalManager.cs" />
     <Compile Include="Models\DirectModel.cs" />
     <Compile Include="IDirectDatabase.cs" />
     <Compile Include="Models\DirectProperties.cs" />
