@@ -27,7 +27,11 @@ namespace Direct.Core
 
       string mainQuery = "";
       foreach (string query in this._queries)
-        mainQuery += query;
+      {
+        string qq = query.Trim();
+        mainQuery += qq + (qq.EndsWith(";") ? "" : ";");
+      }
+
       this._database.Execute(mainQuery);
       this._queries = new List<string>();
     }

@@ -79,6 +79,7 @@
     <Compile Include="DirectContainerRow.cs" />
     <Compile Include="DirectDatabaseBase.cs" />
     <Compile Include="DirectHelper.cs" />
+    <Compile Include="DirectScopeID.cs" />
     <Compile Include="DirectTime.cs" />
     <Compile Include="DirectTransactionalManager.cs" />
     <Compile Include="Models\DirectModel.cs" />

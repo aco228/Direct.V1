@@ -26,7 +26,8 @@ namespace Direct.Core
 		public string DatabaseName { get { return this._databaseName; } }
 		public string DatabaseScheme { get { return this._databaseScheme; } }
     public virtual string CurrentDateQueryString { get { return string.Empty; } }
-		public Action<string> OnFatalAction { get { return this._onFatalAction; } set { this._onFatalAction = value; } }
+    public virtual string QueryScopeID { get { return string.Empty; } }
+    public Action<string> OnFatalAction { get { return this._onFatalAction; } set { this._onFatalAction = value; } }
     public DirectTransactionalManager Transactional { get { return this._transactionalManager; } }
 
 		public DirectDatabaseBase(string databaseName, string databaseScheme)
@@ -208,7 +209,9 @@ namespace Direct.Core
 
         if (fullName.Equals("Direct.Core.DirectTime"))
           value = this.CurrentDateQueryString;
-				else if (fullName.Equals("System.Int32") || fullName.Equals("System.Double"))
+        if (fullName.Equals("Direct.Core.DirectScopeID"))
+          value = this.QueryScopeID;
+        else if (fullName.Equals("System.Int32") || fullName.Equals("System.Double"))
 					value = parameters[i].ToString();
 				else if (fullName.Equals("System.String"))
 					value = string.Format("'{0}'", parameters[i].ToString().Replace("'", string.Empty));

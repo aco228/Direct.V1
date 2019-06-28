@@ -17,6 +17,7 @@ namespace Direct.Core.DatabaseTypes
     private MySqlTransaction _transaction = null;
 
     public override string CurrentDateQueryString => "CURRENT_TIMESTAMP";
+    public override string QueryScopeID => "LAST_INSERT_ID()";
 
     public DirectDatabaseMysql(string databaseName)
       : base(databaseName, string.Empty)
