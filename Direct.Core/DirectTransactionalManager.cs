@@ -11,6 +11,8 @@ namespace Direct.Core
     private DirectDatabaseBase _database = null;
     private List<string> _queries = new List<string>();
 
+    public int Count { get { return this._queries.Count; } }
+
     public DirectTransactionalManager(DirectDatabaseBase db)
     {
       this._database = db;
